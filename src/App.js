@@ -44,8 +44,8 @@ function App() {
     <div className="App">    
       <Nav onSearch={onSearch}/>
       <Routes>
-        <Route path='/ciudad/:ciudadId' element={<Ciudad city={cities}/>}/>
         <Route path='/' element={<Cards cities={cities} onClose={onClose}/>}/>
+        <Route path='/ciudad/:ciudadId' element={<Ciudad city={cities}/>}/>
         <Route path='/about' element={<About/>}/>
       </Routes>
     </div>
